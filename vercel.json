@@ -1,20 +1,12 @@
 {
   "buildCommand": "npm run build",
   "outputDirectory": "dist",
-  "framework": "other",
-  "functions": {
-    "api/**/*.ts": {
-      "runtime": "22.x"
-    }
-  },
+  "framework": "vite",
   "env": {
-    "NODE_ENV": "production",
-    "NODE_VERSION": "18"
+    "NODE_ENV": "production"
   },
   "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "/index.js"
-    }
+    { "handle": "filesystem" },
+    { "src": "/(.*)", "dest": "/index.html" }
   ]
 }
