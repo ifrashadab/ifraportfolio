@@ -4,7 +4,7 @@
   "framework": "other",
   "functions": {
     "api/**/*.ts": {
-      "runtime": "nodejs18.x"
+      "runtime": "22.x"
     }
   },
   "env": {
